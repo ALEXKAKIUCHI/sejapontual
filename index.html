@@ -1,47 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Comunicado</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      text-align: center;
-    }
+<style>
+  body {
+    background-color: black;
+    color: white;
+    font-family: serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  }
 
+  h1 {
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 img {
+    margin-right: 10px;
+    max-height: 50px;
+  }
+
+  p {
+    margin-bottom: 3px;
+    line-height: 0.7;
+  }
+
+  /* Media query para telas menores */
+  @media (max-width: 768px) {
     h1 {
-      font-size: 47px;
-      display: flex;
-      align-items: center;
+      font-size: 24px; /* Exemplo de ajuste do tamanho da fonte para telas menores */
     }
-
-    h1 img {
-      margin-right: 10px;
-      max-height: 50px;
-    }
-
     p {
-      font-size: 22px;
-      margin-bottom: 3px;
-      line-height: 0.7;
+      margin-bottom: 2px; /* Exemplo de ajuste do espaço entre as linhas para telas menores */
     }
-  </style>
-</head>
-<body>
-  <h1>
-    <img src="https://cdn.pixabay.com/photo/2016/09/16/09/20/alarm-1673577_1280.png" alt="Imagem">
-    Seja Pontual
-  </h1>
-  <p>Programe-se para entrar no horário.</p>
-  <p>E caso não seja possível entrar no</p>
-  <p>horário, avise com antecedência para</p>
-  <p>não deixar ninguém esperando.</p>
+  }
+</style>
+
+<h1>
+  <img src="https://cdn.pixabay.com/photo/2016/09/16/09/20/alarm-1673577_1280.png" alt="Imagem">
+  Seja Pontual
+</h1>
+<p>Programe-se para entrar no horário.</p>
+<p>E caso não seja possível entrar no</p>
+<p>horário, avise com antecedência para</p>
+<p>não deixar ninguém esperando.</p>
+
 </body>
 </html>
